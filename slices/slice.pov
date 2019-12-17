@@ -10,7 +10,6 @@
 #declare VD = vnormalize(<0,0,0> - VP);
 #declare VR = vcross(VU,VD);
 #declare ConstC = <-0.08,0.0,-0.83,-0.025>;
-//#declare SLICEDIST = 0.15;
 #declare SLICEDIST = clock;
 
 camera {
