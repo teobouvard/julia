@@ -21,9 +21,9 @@ camera {
 }
 
 global_settings {
-   //radiosity {
-   //   Rad_Settings(Radiosity_Normal,off,off)
-   //}
+   radiosity {
+      Rad_Settings(Radiosity_Normal,off,off)
+   }
    ambient_light rgb <1, 1, 1>
    assumed_gamma 2.2
 }
@@ -48,13 +48,13 @@ julia_fractal {
    sqr
    max_iteration 17
    precision 1000
-   slice <0, 0, 0, 1> SLICEDIST
-   //finish { 
-   //   diffuse 0.9
-   //   phong 1
-   //}
+   slice <0, 0, 0, clock> SLICEDIST
+   finish { 
+      diffuse 0.9
+      phong 1
+   }
    texture { 
       T_Brass_5C
    }
-   rotate <0, 0, 0> // <x°, y°, z°>
+   rotate <100*clock, 100*clock, 100*clock> // <x°, y°, z°>
 }
