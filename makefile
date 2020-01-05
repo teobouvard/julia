@@ -4,7 +4,7 @@ rotations: clean
 slices: clean
 	cd slices && povray settings.ini
 
-full: clean
+full:
 	cd slices+rotations && povray settings.ini
 
 animation:
